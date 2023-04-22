@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point
+ *main - Entry point
  * Description: 'find the last digit of a number'
  * Return: Always 0
  */
@@ -25,7 +25,7 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and less than 6 and not 0\n", n, ld);
 	}
-	        return (0);
+		return (0);
 }
 
 
