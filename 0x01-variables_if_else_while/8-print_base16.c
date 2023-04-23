@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main Entry - point
- * Description: 'print numbers of base 16'
+ * Description: 'write numbers of base 16 in lowercase'
  * Return: Always 0
  */
 int main(void)
