@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  *main Entry - point
- * Description: 'write a script that print all single digit numbers of base 10 starting from 0, followed by a new line'
+ * Description: 'write a script that print all single digit numbers of base 10'
  * Return: Always 0
  */
 int main(void)
