@@ -3,7 +3,7 @@
 #include <time.h>
 /**
  * main Entry - point 
- * Description: 'write a program that print all possible different combination of two digit'
+ * Description: 'print all possible different combination of two digit'
  * Return: always 0
  */
 int main(void)
@@ -18,7 +18,7 @@ int main(void)
 	{
 	putchar(n);
 	putchar(m);
-	if (n == 0 && m == 9)
+	if (n == 1 && m == 10)
 	continue;
 	putchar(',');
 	putchar(' ');
