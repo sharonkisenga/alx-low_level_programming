@@ -2,9 +2,8 @@
 #include <time.h>
 #include <stdio.h>
 /**
- * main - Entry point 
- * Description: 'print number stored in the variable n is negative or positive'
- * Return: Always 0
+ * main - Entry point
+ * Description: 'print numbers stored in n is positive or negative'
  */
 int main(void)
 {
@@ -26,6 +25,3 @@ int main(void)
 	}
 	return (0);
 }
-	
-
-	
