@@ -2,27 +2,26 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry point
- * Description: 'write a script that print all possible different combination of two digit'
+ * main Entry - point 
+ * Description: 'write a program that print all possible different combination of two digit'
  * Return: always 0
  */
 int main(void)
 {
 	int n, m;
 
-	for (n = '0'; n < '9'; n++)
+	for (n = 0; n < 9; n++)
 	{
-
-	for (m = n + 1; m <= '9'; m++)
-	{	
+	for (m = n + 1; m <= 9; m++)
+	{
 	if (m != n)
 	{
 	putchar(n);
 	putchar(m);
-	if (n == '8' && m == '9')
+	if (n == 0 && m == 9)
 	continue;
 	putchar(',');
-	return (' ');
+	putchar(' ');
 	}
 	}
 	}
