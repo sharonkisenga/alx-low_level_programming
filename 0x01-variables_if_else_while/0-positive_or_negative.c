@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * Description: 'print numbers stored in n is positive or negative'
+ * Description: 'print n is positive or negative'
  */
 int main(void)
 {
