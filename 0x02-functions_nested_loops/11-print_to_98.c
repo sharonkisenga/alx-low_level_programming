@@ -1,14 +1,42 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - check the code
- * Return: Always 0
+ * print_to_98 - prints all numbers from n to 98
+ * @n: the number to start printing from
+ * Return: always 0.
  */
-int main(void)
+void print_to_98(int n)
 {
-	int n;
-
-	n = add(89, 9);
-	printf("%d\n", n);
-	return (0);
+	if (n <= 98)
+	{
+	for (; n <= 98; n++)
+	{
+	if (n == 98)
+	{
+		printf("%d", n);
+		printf("\n");
+		break;
+	}
+	else
+	{
+		printf("%d, ", n);
+	}
+	}
+	}
+	else 
+	{
+	for (; n >= 98; n--)
+	{
+	if (n == 98)
+	{
+	printf("%d", n);
+	printf("\n");
+	break;
+	}
+	else
+	{
+	printf("%d, ", n);
+	}
+	}
+	}
 }
