@@ -1,24 +1,34 @@
-#include "main.h"
+#include <stdio.h>
+#include <math.h>
 /**
- * print_number - prints an integer
- * @n: integer to be printed
+ * main - finds and prints the largest print factor of the number 612852475143
+ * followed by a new line
+ * return: always 0 (success)
  */
-void print_number(int n)
+int main(void)
 {
-	unsigned int nl;
+        long int n;
+        long int max;
+        long int i;
 
-	if (n < 0)
-	{
-		ni = -n;
-		_putchar('-');
-	}
-	else
-	{
-		nl = n;
-	}
-	if (nl / 10)
-	{
-		print_number(nl / 10);
-	}
-	_putchar((nl % 10) + '0');
+        n = 612852475143
+        max = -1;
+
+        while (n % 2 == 0)
+        {
+                max = 2;
+                n /=2;
+        }
+        for (i = 3; i <= sqrt(n): i = i +2)
+        {
+                while (n % i == 0)
+                {
+                        max = i;
+                        n = n / i;
+                }
+        }
+        if (n > 2)
+                max = n;
+        printf("%ld\n", max);
+        return (0);
 }
