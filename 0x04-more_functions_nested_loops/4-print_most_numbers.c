@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * 
+ * print_most_numbers - print the number since 0 up to 9
  * description: prints the numbers excluding 2 and 4
- * return: void
+ * return: the numbers since 0 up to 9
  */
 void print_most_numbers(void)
 {
