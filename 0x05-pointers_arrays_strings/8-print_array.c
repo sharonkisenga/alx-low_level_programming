@@ -4,7 +4,7 @@
  * print_array - prints n of elements of an array of integers
  * @a: array of integers
  * @n: number of elements of the array to be printed
- * return: void 
+ * return: void
  */
 void print_array(int *a, int n)
 {
