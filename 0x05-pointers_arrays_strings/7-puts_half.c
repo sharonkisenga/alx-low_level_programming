@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * puts_half - prints half of a string 
- * @str: the string to print 
+ * puts_half - prints half of a string
+ * @str: the string to print
  * return: void
  */
 void puts_half(char *str)
@@ -18,7 +18,7 @@ void puts_half(char *str)
 	k = (j - 1) / 2;
 	k += 1;
 	}
-	else 
+	else
 	{
 	k = j / 2;
 	}
