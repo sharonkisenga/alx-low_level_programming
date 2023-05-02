@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* swap_int - write a function that returns the length of a string
+* swap_int - write a function that swaps the value of integers
 * @a: the first integer to be swapped
  * @b: the second integer to be swapped
  * return: nothing
