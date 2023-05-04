@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * rot13 - encoder rot13
+ * rot13 - print a function that encoder rot13
  * @s: pointer to atring params
  * return: *s
  */

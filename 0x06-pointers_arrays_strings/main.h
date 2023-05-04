@@ -17,6 +17,7 @@ void print_buffer(char *b, int size);
 char *leet(char *);
 char *rot13(char *s);
 void print_number(int n);
+char *rot13(char *);
 int _putchar(char i);
 
 
