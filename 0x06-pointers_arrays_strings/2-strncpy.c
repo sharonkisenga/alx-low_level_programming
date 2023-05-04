@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strncpy - copies at most an inputted number of a bytes from string src into dest
+ * _strncpy - print a function that copies a string
  * @dest: the buffer storing the string copy
  * @src: the source string
  * @n: the maximum number of bytes to copies from src
- * return: a pointer to the resulting string dest
+ * return: always dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
