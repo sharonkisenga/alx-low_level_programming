@@ -4,7 +4,7 @@
  * @str: the string to be capitalized
  * return: a pointer to the changed strings
  */
-char *cap_string(char *)
+char *cap_string(char *str)
 {
 	int index = 0;
 
