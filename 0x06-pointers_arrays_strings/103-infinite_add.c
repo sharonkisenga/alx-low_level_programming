@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _add: write a function that adds two numbers
- * return: always r
+ * _size: write a function that adds two numbers
+ * return: always 0
  */
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
@@ -28,7 +28,11 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			val2 = 0;
 		else val2 = *(n2 + j) - '0';
 		temp_tot = val1 + val2 + overflow;
-		if (digits >= (size_r - 1))
+		if (temp_tot >= 10)
+			overflow = 1;
+		else
+			overflow = 0;
+		if (digits >= (size_r -1))
 			return (0);
 		*(r + digits) = (temp_tot % 10) + '0';
 		digits++;
