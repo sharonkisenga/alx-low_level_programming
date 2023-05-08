@@ -1,27 +1,24 @@
 #include "main.h"
 /**
- * _strspn - entry point
+ * _strspn - print the consecutive character of s1 that are in s2
  * @s: input
  * @sccept: input
  * return: always 0 (success)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
+	unsigned int i, j;
 	int index;
 
-	while (*s)
+	for (j = 0; *s(s + j); j++)
 	{
-	for (index = 0; accept[index]; index++)
+	for (i = 0; *(accept + i); i++)
 	{
-	if (*s == accept[index])
-	{
-		bytes++;
+	if (*(s +j) == *(accept +i))
 		break;
 	}
-	else if (accept[index + 1] == '\0')
-		return (bytes);
+	if (*(accept + i) == '\0')
+		break;
 	}
-	s++;
-	}
+		return (j);
 }
