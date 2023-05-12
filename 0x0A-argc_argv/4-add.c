@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - prints program that adds positive numbers
+ * main - prints positive numbers 
  * @argc: argument count
  * @argv: argument vector
  * return: always 0
@@ -35,5 +35,5 @@ int main(int argc, char *argv[])
 	{
 	printf("0\n");
 	}
-	return (0);
+	return (1);
 }
