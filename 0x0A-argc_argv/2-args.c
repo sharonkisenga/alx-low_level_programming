@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * main - print all argument it receives
+ * main - print all argument it receives all argument should be printed includind the fiest one
  * @argc: argument count
  * @argv: argument vector
  * return: always 0
