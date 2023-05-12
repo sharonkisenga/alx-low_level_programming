@@ -5,7 +5,7 @@
  * main - print the result of multiplication stored in integer
  * @argc: argument count
  * @argv: argument vector
- * return: always 0
+ * return: always 1
  */
 int main(int argc, char *argv[])
 {
