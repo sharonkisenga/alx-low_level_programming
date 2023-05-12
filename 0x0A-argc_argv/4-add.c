@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - prints the minimum number of coins to make change for amount of money
+ * main - prints program that adds positive numbers
  * @argc: argument count
  * @argv: argument vector
  * return: always 0
