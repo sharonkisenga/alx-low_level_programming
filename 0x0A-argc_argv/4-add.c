@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * main - prints positive numbers 
+ * main - prints positive numbers
  * @argc: argument count
  * @argv: argument vector
  * return: always 0
