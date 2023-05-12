@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - print the result of multiplication
+ * main - print the result of multiplication stored in integer
  * @argc: argument count
  * @argv: argument vector
  * return: always 0
