@@ -5,7 +5,7 @@
  * size_t print_listint_safe(const listint_t *head);
  */
 /**
- * looped_listint_len - count the number of unique code 
+ * looped_listint_len - count the number of unique code
  * @head: pointer to the head of listint_t
  * return: if the list is not looped - 0
  */
@@ -46,7 +46,7 @@ size_t looped_listint_len(const listint_t *head)
 /**
  * print_listint_safe - prints a listint_t linked list
  * @head: pointer to the head
- * return: the number of nodes 
+ * return: the number of nodes
  */
 size_t print_listint_safe(const listint_t *head)
 {
