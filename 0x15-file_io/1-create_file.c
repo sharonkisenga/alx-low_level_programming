@@ -2,7 +2,7 @@
 /**
  * create_file - create file
  * @filename: show the name of the file to  create
- * @@text_content: string to write to the file 
+ * @@text_content: string to write to the file
  * return: 1 on success, -1 on failure
  */
 int create_file(const char *filename, char *text_content)
@@ -20,7 +20,7 @@ int create_file(const char *filename, char *text_content)
 	s = write(i, text_content, len);
 	if (i == -1 || s == -1)
 	return (-1);
-	close (i);
+	close(i);
 	return (1);
 }
 
