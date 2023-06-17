@@ -1,30 +1,28 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * read_textfiles - read atext file and print it to the FOSIX
- * @filename: the neme of the file
- * @letters: it should read and print number of letters
- * return: return 0 if the file can not be opened or read or if is NULL
+ * read_texfile - reads a text file and prints it 
+ * @letters: pointer to an array containing file 
+ * return: 0 if fails or does not read the file
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t s, p, q;
 	char *buff;
+	int d;
+	size_t p, f;
 
-	if (filename == NULL)
-	return (0);
-	buff = malloc(sizeof(char) * letters);
-	if (buff == NULL)
-	return (0);
-	s = open(filename, O_RDONLY);
-	p = read(s, buff, letters);
-	q = write(STDOUT_FILENO, buff, p);
-	if (s == -1 || p == -1 || q == -1 || q != p)
-	{
-	free(buff);
-	return (0);
-	}
-	free(buff);
-	close(s);
-	return (q);
+	if (!filename)
+		return(0);
+	d = open(filename, O_RDONLY);
+	if (d == -1)
+		return (0);
+	buff = malloc(sizeof(char) * (letters));
+       if (!buff)
+       return (0);
+	p = read(d, buff, letters);
+        f = write(STDOUT_FILENO, buff, p);
+        close(d);
+        free(buff);
+        return (f);
 }
