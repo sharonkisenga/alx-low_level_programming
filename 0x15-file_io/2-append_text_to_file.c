@@ -6,27 +6,22 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int *filename;
-	int *textcontent;
-	char buff[256];
-	
-	filename=open("myfilename.txt", "r");
-	textcontent=open("mytextcontent.txt", r+);
-	if (filename==NULL)
+	int sha;
+	int ron;
+	int sharon = 0;
+
+	if (filename == NULL)
+	return (-1);
+	if (text_content != NULL)
 	{
-	perror("Error opening file.");
+	for (sharon = 0; text_content[sharon];)
+		sharon++;
 	}
-	else 
-	{
-	while (!feof(filename))
-	{
-	if (fgets(buff, 100, filename) != NULL) 
-	{
-	lseek(textcontent, -100, SEEK_END);
-		fprintf(textcontent, buff0);
-	}
-	close(filename);
-	close(textcontent);
-	}
-	}
+	sha = open(filename, O_WRONLY | O_APPEND);
+	ron = write(sha, text_content, sharon);
+	if (sha == -1 || ron == -1)
+		return (-1);
+	close(sha);
+	return (1);
 }
+
